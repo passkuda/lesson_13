@@ -1,0 +1,87 @@
+@import url(reset.css);
+
+
+[class*="__container"]{
+	max-width: 1200px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+.header{
+	margin-bottom: 100px;
+}
+
+.main{
+	padding: 20px 0;
+}
+
+.header__title{
+	text-align: center;
+	font-weight: 700;	
+	font-size: 30px;
+	line-height: 1.3;
+	padding: 20px 0;
+}
+
+.main__body{
+	min-height: 500px;
+	border: 2px solid #000;
+	position: relative;
+	overflow: hidden;
+}
+
+.main__content{
+	width: 100px;
+	height: 100px;
+	background-color: green;
+	animation: width 5s linear infinite  reverse;
+	position: absolute;
+	
+}
+
+@keyframes width{
+	0%{
+	width: 100px;
+	height: 100px;
+	top: 0;
+	left: 0;
+	}
+	50%{
+	width: 100%;
+	height: 100px;
+
+	}
+	55%{
+
+	transform: rotate(180deg);
+	}
+
+	60%{
+		width: 100px;
+		height: 500px;
+		top: 0;
+	}
+
+	65%{
+		width: 100px;
+		height: 100px;
+		
+	}
+	
+	70%{
+		width: 100%;
+		height: 100px;
+		
+		
+		
+	}
+	95%{
+		width: 100px;
+		height: 500px;
+	}
+	100%{
+		width: 100px;
+		height: 100px;
+
+	}
+}
