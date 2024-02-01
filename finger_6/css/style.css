@@ -1,0 +1,166 @@
+@import url(reset.css);
+
+[class*="__container"]{
+	max-width: 1200px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+.header__title{
+	text-align: center;
+	font-weight: 700;
+	font-size: 35px;
+	line-height: 1.2;
+	padding: 20px 0;
+}
+
+.test{
+	text-align: center;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	line-height: 1.2;
+	font-size: 22px;
+}
+
+
+
+[class*="word"]{
+display: inline-block;
+}
+
+.word1{
+	animation: tes 4s linear  infinite;
+	color: green;
+}
+.word2{
+	animation: tes 4s linear 1s infinite;
+	color: green;
+}
+.word3{
+	animation: tes 4s linear 2s infinite;
+	color: green;
+}
+.word4{
+	animation: tes 4s linear 3s infinite;
+	color: purple;
+}
+.word5{
+	animation: tes 4s linear 4s infinite;
+	color: purple;
+}
+
+.word6{
+	animation: tes 4s linear 5s infinite;
+	color: rgb(230, 234, 11)
+}
+.word7{
+	animation: tes 4s linear 6s infinite;
+	color: rgb(230, 234, 11)
+}
+.word8{
+	animation: tes 4s linear 7s infinite;
+	color: rgb(230, 234, 11)
+}
+.word9{
+	animation: tes 4s linear 8s infinite;
+	color: rgb(230, 234, 11)
+}
+
+
+.word10{
+	animation: tes 4s linear 9s infinite;
+	color: rgb(11, 11, 234)
+}
+.word11{
+	animation: tes 4s linear 10s infinite;
+	color: rgb(11, 11, 234)
+}
+.word12{
+	animation: tes 4s linear 11s infinite;
+	color: rgb(11, 11, 234)
+}
+
+
+.word13{
+	animation: tes 4s linear 12s infinite;
+	color: rgb(11, 253, 51)
+}
+
+.word14{
+	animation: tes 4s linear 13s infinite;
+	color: rgb(11, 253, 51)
+}
+
+
+.word15{
+	animation: tes 4s linear 14s infinite;
+	color: rgb(11, 253, 51)
+}
+
+
+.word16{
+	animation: tes 4s linear 15s infinite;
+	color: rgb(11, 253, 51)
+}
+
+
+.word17{
+	animation: tes 4s linear 16s infinite;
+	color: rgb(11, 253, 51)
+}
+
+
+.word18{
+	animation: tes 4s linear 17s infinite;
+	color: rgb(11, 253, 51)
+}
+
+
+.word19{
+	animation: tes 4s linear 18s infinite;
+	color: rgb(11, 253, 51)
+}
+
+
+.word20{
+	animation: tes 4s linear 19s infinite;
+	color: rgb(11, 253, 51)
+}
+
+
+.word21{
+	animation: tes 4s linear 20s infinite;
+	color: rgb(11, 253, 51)
+}
+
+
+.word22{
+	animation: tes 4s linear 21s infinite;
+	color: rgb(11, 253, 51)
+}
+
+
+.word23{
+	animation: tes 4s linear 22s infinite;
+	color: rgb(11, 253, 51)
+}
+
+
+
+
+
+
+@keyframes tes {
+	0%{
+
+	}
+	90%{
+		opacity: 1;
+	}
+	100%{
+		transform: translate(0px, 600px) rotate(360deg) scale(2);
+		color: red;
+		opacity: 0;
+	}
+}
