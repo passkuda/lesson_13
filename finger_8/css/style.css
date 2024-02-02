@@ -1,0 +1,159 @@
+@import url(reset.css);
+
+
+
+[class*="__container"]{
+	max-width: 1200px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+.header__title{
+	text-align: center;
+	font-weight: 700;
+	font-size: 25px;
+	line-height: 1.2;
+	padding: 20px 0;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+}
+
+
+
+.main__body{
+
+	height: 500px;
+	padding: 15px;
+	font-size: 25px;
+	font-weight: 700;
+	line-height: 1.2;
+	position: relative;
+}
+
+
+[class*="main__words"]{
+	position: absolute;
+	top: -500px;
+	right: 15px;
+}
+
+
+.main__words1,
+.main__words0,
+.main__words2,
+.main__words3,
+.main__words4,
+.main__words5{
+	animation: main 10s linear forwards;
+	border: 2px solid #000;
+	border-radius: 5px;
+	padding: 5px;
+	background-color: yellow;
+	display: inline-block;
+	
+} 
+
+.main__words1{
+	transform: translate(-400px);
+}
+.main__words0{
+	transform: translate(-350px);
+	}
+.main__words2{
+	transform: translate(-160px);
+	}
+.main__words3{
+	transform: translate(-20px);
+}
+.main__words4{
+	transform: translate(100px);
+}
+.main__words5{
+	transform: translate(250px);
+}
+	
+.main__words0{
+	animation: main 10s linear 4s forwards;
+}
+.main__words2{
+	animation: main 10s linear 8s forwards;
+}
+.main__words3{
+	animation: main 10s linear 11s forwards;
+}
+.main__words4{
+	animation: main 10s linear 14s forwards;
+}
+.main__words5{
+	animation: main 10s linear 17s forwards;
+}
+@keyframes main {
+	0%{
+	
+	}
+	1%{
+	transform: rotate(90deg);
+	}
+	
+	15%{
+		top: 90%;
+		right: 15px;
+		transform: rotate(0deg);
+	}
+	205%{
+		transform: rotate(0deg);
+	}
+	30%{
+		top: 90%;
+		right: 98%;
+		transform: rotate(-90deg);
+	}
+	45%{
+		top: 15px;
+		right: 98%;
+		transform: rotate(-1800deg);
+	}
+	
+	55%{
+		top: 15px;
+		right: 45%;
+	}
+	65%{
+		top: 50%;
+		right: 45%;
+	}
+	75%{
+		top: 50%;
+		right: 45%;
+		transform: rotate(0deg);
+	}
+
+	95%{
+		
+		
+	}
+	99%{
+		
+	}
+	100%{
+		top: 50%;
+		right: 45%;
+	}
+}  
+
+
+
+[class*="main__test"]{
+	animation: ups 2s linear 25s forwards;
+	display: inline-block;
+}
+
+@keyframes ups {
+	0%{
+		
+	}
+	100%{
+		
+		transform: rotate(360deg) scale(1.2);
+	}
+}
