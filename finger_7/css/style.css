@@ -1,0 +1,67 @@
+@import url(reset.css);
+
+
+
+[class*="__container"]{
+	max-width: 1200px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+.header__title{
+	text-align: center;
+	font-weight: 700;
+	font-size: 25px;
+	line-height: 1.2;
+	padding: 20px 0;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+}
+
+.main__body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-color: rgba(98, 97, 97, 0.727);
+}
+.main__test{
+	display: inline-block;
+	border-bottom: 50px solid red;
+	border-right: 50px solid transparent;
+	border-left: 50px solid transparent;
+	animation: test 10s linear infinite;
+	
+}
+
+@keyframes test {
+	0%{
+		
+	}
+	40%{
+		width:	100px;
+		height: 100px;
+	}
+	50%{
+		border-top: 50px solid green;
+		border-right: 50px solid blue;
+		border-left: 50px solid yellow;
+	}
+	55%{
+	
+	
+	}
+	60%{
+		border: 30px solid #000;
+		
+	}
+	65%{
+		
+	}
+	100%{
+			transform: rotate(360deg);
+			
+			
+
+	}
+}
