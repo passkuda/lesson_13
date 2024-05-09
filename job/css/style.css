@@ -1,0 +1,69 @@
+
+@import url(reset.css);
+
+
+
+
+[class*="__container"]{
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 15px;
+	overflow: clip;
+}
+.main__container{
+	padding-bottom: 10px;
+}
+
+[class*="__title"]{
+	text-align: center;
+	font-weight: 700;
+	line-height: 1.3;
+	font-size: 23px;
+	padding: 10px;
+	text-transform: uppercase;
+	border: 2px solid #000;
+	border-radius: 5px;
+	margin: 20px 0;
+}
+
+@media (max-width: 460px) {
+	.main__title{
+		font-size: 18px;
+		font-weight: 500;
+	}
+}
+
+
+
+p{
+	font-size: 20px;
+	line-height: 1.5;
+	margin-bottom: 20px;
+}
+
+span{
+	font-family: cursive;
+	line-height: 1.5;
+	font-size: 16px;
+}
+
+.main__example{
+	display: inline-block;
+	color: red;
+	font-weight: 700;
+	text-transform: capitalize;
+	margin-bottom: 10px;
+}
+
+
+ul{
+	border: 3px solid #000;
+	padding: 15px;
+	margin-bottom: 20px;
+	border-radius: 5px;
+	background: url("../img/01.jpg")center repeat;
+	font-size: 18px;
+}
+li:not(:last-child){
+	margin-bottom: 20px;
+}
