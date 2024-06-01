@@ -1,0 +1,186 @@
+
+@import url(resset.css);
+
+
+
+
+[class*="__container"]{
+	max-width: 1200px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+
+.menu__body{
+	max-width: 300px;
+	height: 300px;
+	margin: 100px auto 100px auto;
+	position: relative;
+	padding: 5px;
+}
+
+
+
+.menu__btn{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 1.2;
+	background-color: rgb(110, 206, 232);
+	color: blueviolet;
+	padding: 5px;
+	box-shadow: 2px 2px 5px 2px #000;
+	transition: all 100ms;
+}
+
+.menu__btn:active{
+	box-shadow: 1px 1px 3px 1px #000;
+	top: 49%;
+}
+
+.menu__btn::before{
+	content: "";
+	display: block;
+	width: 100%;
+	height: 4px;
+	background-color: red;
+	position: absolute;
+	top: 50%;
+	left: 0px;
+	opacity: 0;
+	transition: all 300ms;
+}
+
+.menu__btn::after{
+	content: "";
+	display: block;
+	width: 100%;
+	height: 4px;
+	background-color: red;
+	position: absolute;
+	top: 50%;
+	left: 0px;
+	opacity: 0;
+	transition: all 300ms;
+}
+
+
+.menu__btn.active:before{
+	opacity: 1;
+	transform: rotate(-45deg);
+}
+
+.menu__btn.active::after{
+	opacity: 1;
+	transform: rotate(45deg);
+}
+
+
+.menu__btn.active{
+	background-color: #fff;
+	color: #fff;
+}
+
+
+
+
+.menu__links{
+	opacity: 0;
+	visibility: hidden;
+}
+
+.menu__links li{
+	width: 90px;
+	height: 90px;
+	position: absolute;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+
+
+.menu__links.active .menu__yt{
+	animation: show 1s forwards linear 0s;
+}	
+
+.menu__links.active .menu__tw{
+	animation: show 1s forwards linear 0.1s;
+}	
+.menu__links.active .menu__fb{
+	animation: show 1s forwards linear 0.2s;
+}	
+.menu__links.active .menu__in{
+	animation: show 1s forwards linear 0.3s;
+}	
+
+
+.menu__yt{
+	top: 12%;
+	left: 58%;
+	border-radius: 0 100% 0 0;
+	background-color: red;
+	color: #fff;
+	font-weight: 700;
+	text-transform: capitalize;
+}
+
+.menu__tw{
+	top: 58%;
+	left: 58%;
+	border-radius: 0 0 100% 0;
+	background-color: #00acee;
+	color: #fff;
+	font-weight: 700;
+}
+
+.menu__fb{
+	top: 58%;
+	left: 12%;
+	border-radius: 0 0 0 100%;
+	background-color: #3b5998;
+	font-weight: 700;
+	color: #fff;
+}
+
+.menu__in{
+	top: 12%;
+	left: 12%;
+	border-radius: 100% 0 0 0;
+	background-color: #f58529;
+	font-weight: 700;
+	color: #fff;
+}
+
+@keyframes show{
+	0%{
+		opacity: 0;
+		visibility: hidden;
+	}
+	100%{
+		opacity: 1;
+		visibility: visible;
+	}
+}
+
+
+.menu__links.active{
+	opacity: 1;
+}
+
+
+.menu__links a{
+	display: inline-block;
+	line-height: 1.3;
+	width: 100%;
+	height: 100%;
+	transform: translate(0%, 35%);
+	font-size: 12px;
+	text-align: center;
+}
+
