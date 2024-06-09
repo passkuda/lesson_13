@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>form</title>
+</head>
+<body>
+	<div class="form">
+		<div class="form__video">
+			<video preload="metadata" loop autoplay muted src="/video/video.webm"></video>
+		</div>
+		<div class="form__body">
+			<h3 class="form__title">Запис на консультацію</h3>
+			<div class="form__subtitle">
+				Напишіть будь ласка запит, який вас турбує
+			</div>
+			<form class="form__custom" action="#" method="post" enctype="multipart/form-data">
+				<input class="form__userphone" placeholder="Телефон/телеграм" tabindex="1" type="tell" name="userphone" value="">
+				<input class="form__username" placeholder="Ваше ім'я" tabindex="2" type="text" name="username">
+				<textarea class="form__complaints" placeholder="Питання, яке вас хвилює." tabindex="3" name="complaints"></textarea>
+				<button class="form__button" tabindex="4" type="submit">Надіслати запит</button>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
