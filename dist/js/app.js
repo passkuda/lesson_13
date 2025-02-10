@@ -3651,7 +3651,7 @@
         if (document.querySelector(".gallery__slider")) new swiper_core_Swiper(".gallery__slider", {
             modules: [ Navigation, Pagination ],
             slidesPerView: 1,
-            spaceBetween: 5,
+            spaceBetween: 20,
             loop: true,
             navigation: {
                 nextEl: ".gallery__next",
