@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20250204130238">
+	<link rel="stylesheet" href="css/style.min.css?_v=20250210124133">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -46,20 +46,10 @@
 					<nav class="menu__body">
 						<ul class="menu__list">
 							<li class="menu__item"><a href="catalog.html" class="menu__link">All products</a></li>
-							<li class="menu__item"><a href="#" class="menu__link">Пункт 2</a></li>
-							<li class="menu__item"><a href="#" class="menu__link">Пункт 3</a></li>
-							<li class="menu__item"><a href="#" class="menu__link">Пункт 4</a></li>
-							<li class="menu__item"><a href="#" class="menu__link">Пункт 1</a></li>
-							<li class="menu__item"><a href="#" class="menu__link">Пункт 2</a></li>
-							<li class="menu__item"><a href="#" class="menu__link">Пункт 1</a></li>
-							<li class="menu__item"><a href="#" class="menu__link">Пункт 2</a></li>
-							<li class="menu__item"><a href="#" class="menu__link">Пункт 2</a></li>
-							<li class="menu__item"><a href="#" class="menu__link">Пункт 3</a></li>
-							<li class="menu__item"><a href="#" class="menu__link">Пункт 4</a></li>
-							<li class="menu__item"><a href="#" class="menu__link">Пункт 1</a></li>
-							<li class="menu__item"><a href="#" class="menu__link">Пункт 2</a></li>
-							<li class="menu__item"><a href="#" class="menu__link">Пункт 1</a></li>
-							<li class="menu__item"><a href="#" class="menu__link">Пункт 2</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">Mini Tractors</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">Mini Excavators</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">Accessories</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">Any of your options can be added</a></li>
 						</ul>
 					</nav>
 					<button type="button" class="menu__icon icon-menu"><span></span></button>
@@ -77,7 +67,7 @@
 							country!"
 						</div>
 						<a href="#" class="slider-overlay__btn">Get a consultation</a>
-						<a href="#" class="slider-overlay__arrow"> <picture><source srcset="img/icons/arrow2.webp" type="image/webp"><img src="img/icons/arrow2.png" alt=""></picture> </a>
+						<a href="#advantages" class="slider-overlay__arrow"> <picture><source srcset="img/icons/arrow2.webp" type="image/webp"><img src="img/icons/arrow2.png" alt=""></picture> </a>
 					</div>
 					<!-- Оболонка слайдера -->
 					<div class="fullscreen__slider swiper">
@@ -104,7 +94,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="advantages">
+			<section id="advantages" class="advantages">
 				<div class="advantages__container">
 					<h2 class="advantages__title">What do we offer?</h2>
 					<div class="advantages__body">
@@ -221,7 +211,7 @@
 						</div>
 						<!-- Правая колонка: карта -->
 						<div class="about-us__right" data-animate="fade-in">
-							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3548.4897614102397!2d153.10983427632178!3d-27.20376910542935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b93e8b466937f8b%3A0x149f21c4b3051cf7!2zNjEgTWVpbiBTdCwgU2NhcmJvcm91Z2ggUUxEIDQwMjAsINCQ0LLRgdGC0YDQsNC70LjRjw!5e0!3m2!1sru!2sua!4v1738492347202!5m2!1sru!2sua" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+							<iframe style="width: 100%; height: 450px; border: 0;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3548.4897614102397!2d153.10983427632178!3d-27.20376910542935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b93e8b466937f8b%3A0x149f21c4b3051cf7!2zNjEgTWVpbiBTdCwgU2NhcmJvcm91Z2ggUUxEIDQwMjAsINCQ0LLRgdGC0YDQsNC70LjRjw!5e0!3m2!1sru!2sua!4v1738492347202!5m2!1sru!2sua" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 						</div>
 					</div>
 				</div>
@@ -345,7 +335,7 @@
 							<input type="text" id="name" name="name" class="review-form__input" required>
 							<div class="review-form__select-container">
 								<label for="rating" class="review-form__label">Оценка:</label>
-								<select id="rating" name="rating" class="review-form__select" required>
+								<select id="rating" name="rating" class="review-form__select">
 									<option value="1">1 звезда</option>
 									<option value="2">2 звезды</option>
 									<option value="3">3 звезды</option>
@@ -443,7 +433,7 @@
 				</div>
 				<div class="footer__contacts">
 					<p class="footer__address">📍 61 Mein Street, Scarborough, Brisbane, QLD, Australia</p>
-					<p class="footer__phone">📞 <a href="tel:+61 4 8873 2755">+61 4 8873 2755</a></p>
+					<p class="footer__phone">📞 <a href="tel:+61488732755">+61 4 8873 2755</a></p>
 					<p class="footer__email">✉ <a href="mailto:example@email.com">example@email.com</a></p>
 					<div class="footer__links">
 						<a href="https://wa.me/61XXXXXXXXX" class="footer__link">📲 WhatsApp</a> |
@@ -451,12 +441,12 @@
 					</div>
 				</div>
 				<div class="footer__cta">
-					<a href="catalog.html" class="footer__button">Перейти в каталог</a>
+					<a href="catalog.html" class="footer__button">Catalog</a>
 				</div>
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20250204130238"></script>
+	<script src="js/app.min.js?_v=20250210124133"></script>
 
 
 </body>
